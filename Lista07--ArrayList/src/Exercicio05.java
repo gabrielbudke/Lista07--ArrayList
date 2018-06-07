@@ -18,19 +18,24 @@ public class Exercicio05 {
         for (int i = 0; i < 4; i++) {
             while (true) {
                 try {
-                    nomes.add(JOptionPane.showInputDialog("Digite o " + (i + 1) + "º nomes: "));                    
-                    break;
-                } catch (Exception e) {
-                    JOptionPane.showMessageDialog(null, "Entrada inválida",
-                            null, JOptionPane.ERROR);
-                }
-            }
+                    String nome = JOptionPane.showInputDialog("Digite o " + (i + 1) + "º nomes: ");
 
+                    if (!nomes.equals("")) {
+                        nomes.add(nome);
+                        break;
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Entrada inválida",
+                                null, JOptionPane.ERROR);
+                    }
+
+                } catch (Exception e) {
+                    JOptionPane.showMessageDialog(null, "Opção Inválida");
+
+                }
+
+            }
         }
 
-        
-        
-        
     }
 
 }
