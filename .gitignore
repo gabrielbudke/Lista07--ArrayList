@@ -21,3 +21,12 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+Lista07--ArrayList/build.xml
+Lista07--ArrayList/manifest.mf
+Lista07--ArrayList/nbproject/build-impl.xml
+Lista07--ArrayList/nbproject/genfiles.properties
+Lista07--ArrayList/nbproject/private/private.properties
+Lista07--ArrayList/nbproject/project.properties
+Lista07--ArrayList/nbproject/project.xml
+/Lista07--ArrayList/build/
+Lista07--ArrayList/nbproject/private/config.properties
