@@ -49,7 +49,7 @@ public class Exercicio05 {
             }
             
             JOptionPane.showMessageDialog(null, "Nome não encontrado");
-            
+            break;
                 
         }
     }
