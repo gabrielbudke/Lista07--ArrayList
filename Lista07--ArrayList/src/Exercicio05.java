@@ -15,14 +15,14 @@ public class Exercicio05 {
          com esse nome, deve-se verificar se ele está contido 
          no ArrayList ou não e esta informação deve ser apresentada ao usuário.
          */
-        
         ArrayList<String> nomes = new ArrayList<>();
+
         for (int i = 0; i < 4; i++) {
             //Try/Catch para validação de espaço vazio
             while (true) {
                 try {
                     String nome = JOptionPane.showInputDialog(
-                            "Cadastre o " + (i + 1) + "° nomes: ");
+                            "Cadastre o " + (i + 1) + "° nome: ").toUpperCase();
 
                     if (!nome.equals("")) {
                         nomes.add(nome);
@@ -30,38 +30,29 @@ public class Exercicio05 {
                     } else {
                         JOptionPane.showMessageDialog(null, "Entrada Inválida");
                     }
-                    
+
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, "Entrada Inválida");
 
                 }
-            }            
-            
+            }
+
         }
-        
+
         String busca = JOptionPane.showInputDialog("Digite o nome para busca");
-        
-        for(int i = 0; i < nomes.size(); i++){
-            
-            if(nomes.get(i).contains(busca)){
-                JOptionPane.showMessageDialog(null, nomes.get(i));
+
+        for (int i = 0; i < nomes.size(); i++) {
+
+            if (busca.equalsIgnoreCase(nomes.get(i))) {
+                JOptionPane.showMessageDialog(null, "Nome encontrado!!");
                 break;
-            }else{
-                JOptionPane.showMessageDialog(null, "Nome não encontrado");
             }
             
-            break;
+            if(!busca.equalsIgnoreCase(nomes.get(i))){
+                JOptionPane.showMessageDialog(null, "Nome não encontrado");
+                break;
+            }
+                
         }
-             
-        
-        
-        
-        
-        
-        
-        
-        
-
     }
-
 }
