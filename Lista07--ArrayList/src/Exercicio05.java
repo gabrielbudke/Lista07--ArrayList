@@ -48,10 +48,8 @@ public class Exercicio05 {
                 break;
             }
             
-            if(!busca.equalsIgnoreCase(nomes.get(i))){
-                JOptionPane.showMessageDialog(null, "Nome não encontrado");
-                break;
-            }
+            JOptionPane.showMessageDialog(null, "Nome não encontrado");
+            
                 
         }
     }
